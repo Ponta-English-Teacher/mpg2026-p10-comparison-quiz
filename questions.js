@@ -129,19 +129,21 @@ const QUESTIONS = [
     explanation: "Professor Tanaka is already identified by name, so the clause adds information — commas are used. With commas, use 'who' for a person. 'That' is never used in a clause with commas. 'Whom' is the object form, but here the pronoun is the subject of 'teaches.'",
   },
   {
-    id: 9, section: 1, type: "mc",
-    stem: "The researcher _____ I interviewed yesterday specialises in bilingual education.",
-    options: {
-      A: "who",
-      B: "whom",
-      C: "whose",
-      D: "where",
-    },
-    correct: "B",
-    explanation: "'I interviewed the researcher' — the researcher is the object of 'interviewed.' 'Whom' is the formal object form. In everyday English, 'who,' 'that,' or zero (no pronoun) are also common, but 'whom' is the most accurate answer here.",
+  id: 9,
+  section: 1,
+  type: "mc",
+  stem: "The researcher with _____ I worked on the project moved to Saudi Arabia.",
+  options: {
+    A: "whom",
+    B: "that",
+    C: "which",
+    D: "where",
   },
-  {
-    id: 10, section: 1, type: "mc",
+  correct: "A",
+  explanation: "After a preposition such as 'with,' formal English uses 'whom': 'the researcher with whom I worked.' In everyday conversation, native speakers often avoid this structure and say 'the researcher who I worked with' or simply 'the researcher I worked with.' However, when the preposition comes before the relative pronoun, 'whom' is the standard answer.",
+},
+{
+  id: 10, section: 1, type: "mc",
     stem: "The proposal _____ the committee rejected generated considerable discussion.",
     options: {
       A: "which",
@@ -153,50 +155,50 @@ const QUESTIONS = [
     explanation: "The proposal is the object of 'rejected.' Use 'which' or 'that' for a thing in object position. 'Whose' shows possession. 'Where' and 'why' are relative adverbs for places and reasons.",
   },
 
-  // ── Section 2: Word Order ────────────────────────────────────
+     // ── Section 2: Word Order ────────────────────────────────────
 
   {
     id: 11, section: 2, type: "dragdrop",
     instruction: "Arrange the word blocks to make a correct phrase.",
     fixedStart: [],
-    blocks: ["the", "woman", "who", "whom", "I", "spoke", "to", "yesterday"],
-    correct: ["the", "woman", "who", "I", "spoke", "to", "yesterday"],
-    explanation: "Natural order: 'the woman who I spoke to yesterday.' The preposition 'to' stays at the end. Formal alternative: 'the woman to whom I spoke yesterday' — 'to' moves before 'whom.' Both are correct English.",
+    blocks: ["yesterday", "spoke to", "the woman", "I", "who"],
+    correct: ["the woman", "who", "I", "spoke to", "yesterday"],
+    explanation: "Correct phrase: 'the woman who I spoke to yesterday.' We say 'speak to someone,' so 'spoke to' is kept together as one meaning unit.",
   },
   {
     id: 12, section: 2, type: "dragdrop",
     instruction: "Arrange the word blocks to make a correct phrase.",
     fixedStart: [],
-    blocks: ["the", "city", "that", "which", "they", "moved", "to", "last", "year"],
-    correct: ["the", "city", "that", "they", "moved", "to", "last", "year"],
-    explanation: "Natural order: 'the city that they moved to last year.' The preposition 'to' stays at the end. Formal alternative: 'the city to which they moved last year.' Both are correct.",
+    blocks: ["last year", "that", "the city", "moved to", "they"],
+    correct: ["the city", "that", "they", "moved to", "last year"],
+    explanation: "Correct phrase: 'the city that they moved to last year.' We say 'move to a city,' so 'moved to' is kept together as one meaning unit.",
   },
   {
     id: 13, section: 2, type: "dragdrop",
     instruction: "Arrange the word blocks to make a correct phrase.",
     fixedStart: [],
-    blocks: ["the", "company", "which", "my", "brother", "works", "for"],
-    correct: ["the", "company", "my", "brother", "works", "for"],
-    explanation: "Natural order: 'the company my brother works for' — the relative pronoun is omitted (zero relative). Formal alternative: 'the company for which my brother works.' We say 'work for a company,' so the preposition 'for' belongs with the verb.",
+    blocks: ["works for", "the company", "which", "my brother"],
+    correct: ["the company", "which", "my brother", "works for"],
+    explanation: "Correct phrase: 'the company which my brother works for.' We say 'work for a company,' so 'works for' is kept together as one meaning unit.",
   },
   {
     id: 14, section: 2, type: "dragdrop",
     instruction: "Arrange the word blocks to make a correct phrase.",
     fixedStart: [],
-    blocks: ["the", "school", "which", "she", "graduated", "from"],
-    correct: ["the", "school", "which", "she", "graduated", "from"],
-    explanation: "Natural order: 'the school which she graduated from.' The preposition 'from' stays at the end. Formal alternative: 'the school from which she graduated.' We say 'graduate from a school.'",
+    blocks: ["graduated", "which", "the school from", "she"],
+    correct: ["the school from", "which", "she", "graduated"],
+    explanation: "Correct phrase: 'the school from which she graduated.' This is the formal pattern 'preposition + which.' We say 'graduate from a school.'",
   },
   {
     id: 15, section: 2, type: "dragdrop",
     instruction: "Arrange the word blocks to make a correct phrase.",
     fixedStart: [],
-    blocks: ["the", "candidate", "whom", "many", "people", "voted", "for"],
-    correct: ["the", "candidate", "whom", "many", "people", "voted", "for"],
-    explanation: "Natural order: 'the candidate whom many people voted for.' The preposition 'for' stays at the end. Formal alternative: 'the candidate for whom many people voted.' We say 'vote for a candidate.'",
+    blocks: ["many people", "voted", "the candidate for", "whom"],
+    correct: ["the candidate for", "whom", "many people", "voted"],
+    explanation: "Correct phrase: 'the candidate for whom many people voted.' This is the formal pattern 'preposition + whom.' We say 'vote for a candidate.'",
   },
-
-  // ── Section 3: Short Answer ──────────────────────────────────
+  
+    // ── Section 3: Short Answer ──────────────────────────────────
 
   {
     id: 16, section: 3, type: "mc",
